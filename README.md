@@ -6,7 +6,7 @@ A reusable workflow for coordinating project context, workers, handoffs, and ver
 
 Copy `skills/project-orchestration` to your Codex skills directory (`$CODEX_HOME/skills`, or `~/.codex/skills` when unset). Keep the directory name `project-orchestration`. The skill will be available on your next turn.
 
-The selected public repository is `AndyZHENG0715/codex-project-orchestration`. Once published, install with:
+Install from [AndyZHENG0715/codex-project-orchestration](https://github.com/AndyZHENG0715/codex-project-orchestration):
 
 ```sh
 npx skills add AndyZHENG0715/codex-project-orchestration --skill project-orchestration --agent codex --global
@@ -37,9 +37,10 @@ Checked on October 20, 2026:
 - The installable skill passed Codex skill-creator's `quick_validate.py` in both the release folder and a clean local Codex installation.
 - The installed `SKILL.md` matched the release copy byte for byte (SHA-256: `3ea9a13ae98a5edcfce5165f49b7017b92820864be14d9636679aea3e7563ec1`).
 - All four release files were reviewed: the generic skill, this README, a fictional coordinator example, and the MIT license.
+- Skills CLI `1.7.4` discovered the local package and installed it from the public GitHub repository into an isolated Codex test workspace; its SKILL.md matched the source hash above.
 
-Behavioral compatibility across hosts and installation from a public repository have not yet been tested.
+The public install check used project scope and `--copy --yes` to avoid replacing the user-level skill. Behavioral compatibility across hosts remains untested.
 
 ## License and publication
 
-MIT; see [LICENSE](LICENSE). The public package contains only generic guidance and fictional examples. Repository creation and public installation verification are being completed.
+MIT; see [LICENSE](LICENSE). The public package contains only generic guidance and fictional examples.
