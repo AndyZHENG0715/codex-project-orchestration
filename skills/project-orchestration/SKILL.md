@@ -5,7 +5,7 @@ description: Set up or operate a project coordinator across worker chats or suba
 
 # Project orchestration
 
-Keep the global coordinator responsible for cross-project intake, routing, and priorities. The project coordinator owns one project's context, dependencies, decisions, and acceptance; workers produce concrete deliverables. This skill supplies workflow guidance, not tools or permissions. Use the platform's actual capabilities and creation/messaging authorization.
+A global cross-project coordinator is optional; when used, it handles intake, routing, and priorities. The project coordinator owns one project's context, dependencies, decisions, and acceptance; workers produce concrete deliverables. Choose only the coordination layers the task needs. This skill supplies workflow guidance, not tools or permissions. Use the platform's actual capabilities and creation/messaging authorization.
 
 Start with the requested outcome, audience, relevant constraints, and what counts as done. Specify a process only where a dependency or meaningful boundary requires it. Keep project instructions consistent; explicit user instructions take precedence over this skill's workflow guidance.
 
@@ -17,7 +17,7 @@ Keep a concise existing handoff record, or create one in the authorized workspac
 
 ## Route and brief workers
 
-Handle context recovery, task design, spot checks, synthesis, and small follow-ups directly. Delegate substantial deliverables where separate ownership or independent review adds value; avoid splitting every step or adding workers merely to inspect status. Continue the same worker for corrections or overlapping context. Prefer a fresh worker when independent judgment or a materially different approach requires it. Use persistent chats for sustained work and subagents for bounded tasks. Classify new chats under the owning project when supported. Respect explicit user model choices; choose models for new assignments when selection is authorized.
+Handle context recovery, task design, spot checks, synthesis, and small follow-ups directly. Delegate substantial deliverables where separate ownership or independent review adds value; avoid splitting every step or adding workers merely to inspect status. Continue the same worker for corrections or overlapping context. Prefer a fresh worker when independent judgment or a materially different approach requires it. Choose a persistent worker chat for a separately visible deliverable owner or expected ongoing user follow-up; use subagents for bounded extraction, review, or execution within the owning chat. Subagents can resume where supported; cost depends on model, effort, context, and usage rather than chat type. Reuse useful workers instead of multiplying sidebar chats. Classify new chats under the owning project when supported. Respect explicit user model choices; choose models for new assignments when selection is authorized.
 
 Dispatch dependent work after its prerequisites are complete and accepted. Synthesize accepted findings into a self-contained brief, leading with the deliverable and acceptance criteria. Include the workspace, allowed changes, confirmed facts, assumptions, actual unresolved decisions, and precise artifact/source locations where relevant; these are useful inputs, not mandatory fields for every small assignment. Do not rely on shared full chat history. Coordinator review does not introduce an extra user approval step.
 
