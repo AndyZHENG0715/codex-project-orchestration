@@ -32,10 +32,10 @@ This is an independent Projects-style workflow for Codex, inspired by project-or
 
 ## Validation
 
-Checked on October 20, 2026:
+Structure and copy integrity checked on October 21, 2026; the public-install smoke check was completed on October 20:
 
 - The installable skill passed Codex skill-creator's `quick_validate.py` in both the release folder and a clean local Codex installation.
-- The installed `SKILL.md` matched the release copy byte for byte (SHA-256: `3ea9a13ae98a5edcfce5165f49b7017b92820864be14d9636679aea3e7563ec1`).
+- The installed `SKILL.md` matched the release copy byte for byte (SHA-256: `1d422a3dd9f9e40a1b2e744d665ccbd6cfab2bf2885dce465f401c75cbfc7dd0`).
 - All four release files were reviewed: the generic skill, this README, a fictional coordinator example, and the MIT license.
 - Skills CLI `1.7.4` discovered the local package and installed it from the public GitHub repository into an isolated Codex test workspace; its content matched the source after Windows line-ending normalization.
 
